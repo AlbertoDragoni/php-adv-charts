@@ -25,13 +25,6 @@ $(document).ready(function(){
     }
   });
 
-
-
-
-
-
-
-
   /*  METODI 1 E 2
   // var data = [1000,1322,1123,2301,3288,988,502,2300,5332,2300,1233,2322];
   var data = $('#grafico').data('database');
