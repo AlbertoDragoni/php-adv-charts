@@ -33,9 +33,16 @@ $(document).ready(function(){
     method: 'GET',
     success: function(data){
       var array = data.data;
-      var arrayNomi = Object.keys(data.data);
-      var arrayDati = Object.values(data.data);
-
+      // var arrayNomi = Object.keys(data.data);
+      // var arrayDati = Object.values(data.data);
+      var arrayNomi = [];
+      var arrayDati = [];
+      for (var key in array) {
+      console.log(key);
+      console.log(array[key])
+      arrayNomi.push(key);
+      arrayDati.push(array[key]);
+      }
 
       var ctx = $('#grafico');
       var chart = new Chart(ctx, {
