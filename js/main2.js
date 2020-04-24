@@ -51,7 +51,7 @@ $(document).ready(function(){
               labels: arrayNomi,
               datasets: [{
                   label: 'Grafico Line MST',
-                  backgroundColor: 'blue',
+                  backgroundColor: ['blue', 'yellow', 'green', 'red'],
                   borderColor: 'black',
                   data: arrayDati
               }]
